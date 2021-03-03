@@ -17,14 +17,18 @@
     
 <body>
     <div class="nav-bar">
-        <a href="#"> <img src="resources/img/buttons-arrows-down.png" alt="arrow button" class="arrows-down"></a>
-        <div class="nav-bar-text">מיכאלה</div>
-        <a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-nav-bar"></a>
-         <div class="nav-bar-line"></div>
-        <a href="#"><img src="resources/img/buttons-heder-bell-copy.png" alt="bell button" class="buttons-bell"></a>
-        <a href="#"><img src="resources/img/buttons-c.png" alt="plus button" class="buttons-c"></a>
-        <a href="#"><img src="resources/img/search-icon.png" alt="search button" class="search-icon"></a>
-        <img src="resources/img/header-logo.png" alt="header logo" class="header-logo">                  
+        <div class="header-icons">
+            <a href="#"> <img src="resources/img/buttons-arrows-down.png" alt="arrow button" class="arrows-down"></a>
+            <div class="nav-bar-text">מיכאלה</div>
+            <a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-nav-bar"></a>
+            <div class="nav-bar-line"></div>
+            <a href="#"><img src="resources/img/buttons-heder-bell-copy.png" alt="bell button" class="buttons-bell"></a>
+            <a href="#"><img src="resources/img/buttons-c.png" alt="plus button" class="buttons-c"></a>
+            <a href="#"><img src="resources/img/search-icon.png" alt="search button" class="search-icon"></a>
+        </div>
+        <div class="company-logo">
+            <img src="resources/img/header-logo.png" alt="header logo" class="header-logo"> 
+        </div>             
     </div>
     
     <div class="main-container">
@@ -33,27 +37,67 @@
         </div>
         <div class="group-container">
             <div class="group-name">שם הקבוצה</div>
-            <div class="add-btn-container">
-                <img src="resources/img/buttons-e.png" alt="plus button big" class="buttons-plus">
-            </div>
-            <div class="reports-btn-container">
-                <img src="resources/img/sort-button-with-three-lines.png" alt="reports button" class="reports-btn">
-            </div>      
+            <div class="main-container-buttons">
+                <div class="add-btn-container">
+                    <img src="resources/img/buttons-e.png" alt="plus button big" class="buttons-plus">
+                </div>
+                <div class="reports-btn-container">
+                    <img src="resources/img/sort-button-with-three-lines.png" alt="reports button" class="reports-btn">
+                </div>
+            </div>        
         </div>            
            <ul class="tabs-nav">
-                <li><a href="#">אנשי קשר</a></li>
-                <li><a href="#">חיובים פתוחים</a></li>
-                <li><a href="#">מסמכים</a></li>
-                <li><a href="#">מסמכי מס</a></li>
-                <li><a href="#">חשבונות</a></li>
-                <li><a href="#">הסכמים</a></li>
-                <li><a href="#">תיקים</a> </li>
-                <li><a href="#">לקוחות</a></li>
-                <li><a href="#">כללי</a> </li>
+                <li>אנשי קשר</li>
+                <li>חיובים פתוחים</li>
+                <li>מסמכים</li>
+                <li>מסמכי מס</li>
+                <li>חשבונות</li>
+                <li>הסכמים</li>
+                <li>תיקים</li>
+                <li>לקוחות</li>
+                <li>כללי</li>
            </ul>
-        <div class="tabs-underline"></div>
+        
+        <table class="files-table">
+            <tr class="table-header">
+                <th><a href="#"> הוספת מסמך +</a></th>
+                <th>תיאור</th>
+                <th>תאריך העלאה</th>
+                <th>מעלה המסמך</th>
+                <th>שם המסמך</th>
+            </tr>
+            <tr>
+                <td><a href="#"><img src="resources/img/buttons-menu.png"></a></td>
+                <td>תיאור כלשהוא</td>
+                <td>01/01/2020</td>
+                <td>מיכאלה מיכאל<a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></a></td>
+                <td>שם המסמך<a><img src="resources/img/document.png" class="pdf-icon"></a></td>
+            </tr>
+           <tr>
+                <td><a href="#"><img src="resources/img/buttons-menu.png"></a></td>
+                <td>תיאור כלשהוא</td>
+                <td>01/01/2020</td>
+                <td>מיכאלה מיכאל<a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></a></td>
+                <td>שם המסמך<a><img src="resources/img/document.png" class="pdf-icon"></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><img src="resources/img/buttons-menu.png"></a></td>
+                <td>תיאור כלשהוא</td>
+                <td>01/01/2020</td>
+                <td>מיכאלה מיכאל<a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></a></td>
+                <td>שם המסמך<a><img src="resources/img/document.png" class="pdf-icon"></a></td>
+            </tr>
+            <tr>
+                <td><a href="#"><img src="resources/img/buttons-menu.png"></a></td>
+                <td>תיאור כלשהוא</td>
+                <td>01/01/2020</td>
+                <td>מיכאלה מיכאל<a href="#"><img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></a></td>
+                <td>שם המסמך<a><img src="resources/img/document.png" class="pdf-icon"></a></td>
+            </tr>
+        </table>
+<!--
         <ul class="document-container">
-            <li><a href="#">הוספת מסמך +</a> </li>
+            <li><a href="#">הוספת מסמך +</a></li>
             <li>תיאור</li>
             <li>תאריך העלאה</li>
             <li>מעלה המסמך</li>
@@ -91,9 +135,10 @@
                 <li>01/01/2020</li>
                 <li>תיאור כלשהוא</li>
                 <li><a href="#"><img src="resources/img/buttons-menu.png"></a></li>
-            </ul>
-        
+            </ul>  
         </div>
+-->
+        
     </div>
     
     <div class="side-bar">
