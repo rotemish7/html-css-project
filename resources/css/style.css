@@ -383,14 +383,60 @@ li:hover,
   -----------------------
 */
 
+.table-heading {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 1.5%;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.table-heading a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #5871dd;
+}
+
+.table-heading a:link {
+    text-decoration: none;
+}
+
+.table-subjects {
+    width: 60%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between; 
+    white-space: nowrap;
+}
+
+.table-add-file {
+    width: 40%;
+}
+
+.table-container {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
 .files-table {
-    text-align: right;
-    table-layout: fixed;
+    border-collapse: collapse;
     width: 100%;
     height: auto;
     margin-top: 1%;
-    border-radius: 30%;
     font-size: 14px;
+}
+
+.files-table tr td:last-child,
+.files-table tr td:nth-child(4) {
+     padding-right: 12px;
+}
+
+.files-table tr td:first-child {
+    justify-content: flex-start;
+    padding-left: 1.5%;
 }
 
 .files-table tr:last-child td:first-child {
@@ -401,62 +447,33 @@ li:hover,
     border-bottom-right-radius: 10px;
 }
 
+.files-table tr:first-child td:first-child {
+     border-top-left-radius: 10px;
+}
+
+.files-table tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
 .files-table td {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;    
-    border-radius: 40px;
-}
-.files-table a {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.67;
-    color: #5871dd;
-}
-
-.files-table a:link {
-    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid 1px #e6e6e6;
+    background-color: #ffffff;
+   
+    width: 100%;
+    height: 100%;
 }
 
-.files-table th {
-    font-weight: 300;
-    line-height: normal;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.files-table tr:first-child th:nth-child(3){
-    margin-right: 40px;
-}
-
-.files-table tr:first-child {
-    background-color: #f9faff;
-    height: 40px;
-}
-
-.files-table th:first-child {
-    text-align: left;
-} 
-
-.files-table td:first-child {
-    text-align: left;
-    padding-left: 20px;
-} 
 .files-table tr {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding-right: 10px;
-    background-color: #ffffff;
-    border-bottom: solid 1.5px #e6e6e6;
 }
-
-.files-table tr:last-child {
-    
-}
-
 
 /* ICONS */
 
