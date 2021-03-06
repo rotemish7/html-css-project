@@ -199,7 +199,9 @@ li:hover,
     
 }
 
-.side-bar-containers {
+.side-bar-containers,
+.side-bar-chat-container,
+.side-bar-menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,7 +454,7 @@ li:hover,
 }
 
 .files-table tr:last-child {
-    border-collapse: collapse;
+    
 }
 
 
