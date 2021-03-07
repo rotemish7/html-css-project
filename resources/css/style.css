@@ -69,11 +69,10 @@ li:hover,
     width: calc(100% - 60px);
     height: calc(100% - 60px);
     margin: none;
-    padding: 1.5% 1.5%;
+    padding: 10px 25px;
     background-color: #f9faff;
     float: left;
 }
-
 
 .side-bar {
     display: flex;
@@ -281,6 +280,8 @@ li:hover,
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: flex-start;
+    align-items: center;
+    align-content: center;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.67;
@@ -323,6 +324,7 @@ li:hover,
     height: 13px;
     margin-top:20%;
     margin-left:50%;
+    margin-right: 15px;
     object-fit: contain;
 }
  
@@ -383,13 +385,17 @@ li:hover,
   -----------------------
 */
 
+
+/*--- containers ---*/
+
 .table-heading {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
     list-style: none;
     margin-top: 20px;
-    margin-right: 1.5%;
+    margin-bottom: 3px;
+    margin-right: 10px;
     font-size: 14px;
     white-space: nowrap;
 }
@@ -405,38 +411,49 @@ li:hover,
     text-decoration: none;
 }
 
-.table-subjects {
-    width: 60%;
+.table-heading-topics {
     display: flex;
     flex-flow: row-reverse nowrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     white-space: nowrap;
+    padding-left: 2px;
+    margin-right: 0.5%;
+    width: 61%;
 }
 
-.table-add-file {
-    width: 40%;
+.table-heading-add-file {
+    width: 10%;
 }
 
-.table-container {
+.table-content-container {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    overflow: auto;
+    max-height: 75%;
+    background-color: #ffffff;
 }
+
+
+/*--- table ---*/
+
 .files-table {
     border-collapse: collapse;
     width: 100%;
     height: auto;
     margin-top: 1%;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
-.files-table tr td:last-child,
+.files-table tr td:last-child {
+    padding-right: 20px;
+}
 .files-table tr td:nth-child(4) {
-     padding-right: 12px;
+     padding-right: 10px;
 }
 
 .files-table tr td:first-child {
     justify-content: flex-start;
-    padding-left: 1.5%;
+    padding-left: 28px;
 }
 
 .files-table tr:last-child td:first-child {
@@ -462,7 +479,6 @@ li:hover,
     align-items: center;
     border-bottom: solid 1px #e6e6e6;
     background-color: #ffffff;
-   
     width: 100%;
     height: 100%;
 }
@@ -473,6 +489,10 @@ li:hover,
     justify-content: space-between;
     align-items: center;
     height: 70px;
+}
+
+.files-table tr:first-child {
+    height: 55px;
 }
 
 /* ICONS */
