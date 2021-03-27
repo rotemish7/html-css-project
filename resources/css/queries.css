@@ -5,12 +5,7 @@
 /* Big tablet to 1200px(width smaller than the 1140px row) */
 
 @media only screen and (max-width: 1200px) {
-    .hero-text-box {
-        width: 100%;
-        padding: 0 2%;
-    }
-    
-    .row { padding: 0 2%; }
+
 }
 
 
@@ -18,80 +13,149 @@
 
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px;}
-    section { padding: 60px 0;}
-    
-    .long-copy {
-        width: 80%;
-        margin-left: 10%;
-    }
-    
-    .steps-box { margin-top: 10px; }
-    .stpe-box:last-child { margin-top: 10px }
-    .works-step { margin-bottom: 40px; }
-    .works-step:last-of-type { margin-bottom: 60px;}
-    .app-screen { width: 50%;}
-    
-    .city-feature ion-icon {
-        width: 17px;
-        height: 17px;
-        margin-right: 5px
-}
-    
-    .city-feature { font-size: 90%;}
-    
-    .plan-box {
-        width: 100%;
-        margin-left: 0%;
-    }
-    
-    .plan-price {
-        font-size: 250%;
-    }
-    
-    .contact-form { width: 80%; }
+
 }
 
 
 /* Small phones to small tablets 481px to 767px */
 
 @media only screen and (max-width: 767px) {
-    body { font-size: 16px;}
-    section { padding: 30px 0;}
-    .hero-text-box, .row { padding: 0 4%; }
-    .col { 
-        margin: 0 0 4% 0;
-        width: 100%;
-    }
-    main-nav { display: none;}
+   
+        
     
-    h1 {font-size: 180%;}
-    h2 {font-size: 150%;}
+    /* ---HEADER---- */
     
-    .long-copy {
-        width: 100%;
-        margin-left: 0%;
+    .header-text {
+        margin-left: 4%;
     }
     
-    .app-screen { width: 40%;}
-    .step-box:first-child { text-align: center;}
+    .button-bell {
+        margin-left: 220%;
+    }
+
+    .button-oval-plus {
+        margin-left: 220%;
+    }
+
+    .button-search {
+        margin-left: 700%;
+  
+    }
+
+    .header-logo {
+        margin-right: 100%;
+
+    }
     
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-of-type { margin-bottom: 20px; }
+    .header-icons a {
+        margin: 0;
+    }
     
-    .works-step div {
-        height: 40px;
+    ion-icon {
+        font-size: 140%;
+        display: block;
+        color: #43518e;
+    }
+   
+    
+    /* ---SIDE-BAR---- */
+    
+    .side-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        background-color: white;
+    }
+    
+    .side-bar-menu-container:first-child {
+        background-color: white;
+    }
+    
+    .side-bar :not(:first-child) {display: none;}
+    
+    
+    /* ---MAIN-PAGE---- */
+    
+    
+    .main-container {
+        width: 100%;
+    }
+    
+    .tabs-nav li {
+         font-size: 12px;
+    }
+    
+    .add-btn-container,
+    .reports-btn-container {
         width: 40px;
-        padding: 4px;
-        font-size: 120%;
-        margin-right: 15px;
+        height: 20px;
+    
     }
     
-    .box img {
-        width: 80%;
-        height: auto;
-        margin-left: 50px;
-        text-align: center;
-        margin-bottom: 10px;
+    /* BUTTONS and COMPONENTS */
+
+    .buttons-arrows-right {
+        width: 10px;
+        height: 10px;
+    }
+ 
+    .group-name {
+        font-size: 22px;
+    }
+
+    .reports-btn {
+        width: 10px;
+        height: 10px; 
+    }
+
+    .buttons-plus {
+    width: 10px;
+    height: 10px;
+    }
+    
+    /*  -----------------------
+            TABLE-COMPONENTS
+        ----------------------- */
+                           
+
+    /*--- containers ---*/
+
+    .table-heading,
+    .table-heading a {
+        font-size: 12px;
+    }
+    
+    /*--- table ---*/
+
+    .files-table {
+        white-space: nowrap;
+        font-size: 11px; 
+    }
+    
+    /* ICONS */
+
+    .pdf-icon {
+        width: 14px;
+        height: 18px;
+    }
+
+    .oval-profile-files {
+        width: 22px;
+        height: 22px;
+    }
+
+    .button-arrow-up {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .files-table td {
+        margin-left: 12px;
+    }
+    
+    .files-table td:first-child {
+        margin: -7px;
     }
       
 }
@@ -101,7 +165,151 @@
 /* Small phones 0 to 480px */
 
 @media only screen and (max-width: 480px) {
-    section { padding: 25px 0; }
-    .contact-form { width: 100%; }
+    
+    
+    
+    /* ---HEADER---- */
+    
+    .header-text {
+        margin-left: 5%;
+        font-size: 11px;
+    }
+    
+    .button-bell {
+        width: 13px;
+        height: 17px;
+        margin-left: 140%;
+    }
+
+    .button-oval-plus {
+        width: 24px;
+        height: 24px;
+        margin-left: 140%;
+    }
+
+    .button-search {
+        margin-left: 400%;
+        width: 14px;
+        height: 14px;
+    }
+
+    .header-logo {
+        margin-right: 70px;
+        width: 70px;
+        height: 20px;
+    }
+    
+    .header-icons a {
+        margin: 0;
+    }
+    
+    .button-arrow-down {
+        width: 7px;
+        height: 7px;
+    }
+
+
+    .header-oval-profile {
+        width: 25px;
+        height: 25px;
+    }
+    
+    ion-icon {
+        font-size: 140%;
+        display: block;
+        color: #43518e;
+    }
    
+    
+    /* ---SIDE-BAR---- */
+    
+    .side-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+    }
+    
+    .side-bar-menu-container:first-child {
+        background-color: white;
+    }
+    
+    .side-bar :not(:first-child) {display: none;}
+    
+    
+    /* ---MAIN-PAGE---- */
+    
+    
+    .main-container {
+        width: 100%;
+    }
+    
+    .tabs-nav li {
+         font-size: 10px;
+    }
+    
+    .add-btn-container,
+    .reports-btn-container {
+        width: 40px;
+        height: 20px;
+    
+    }
+    
+    /* BUTTONS and COMPONENTS */
+
+    .buttons-arrows-right {
+        width: 10px;
+        height: 10px;
+    }
+ 
+    .group-name {
+        font-size: 20px;
+    }
+
+    .reports-btn {
+        width: 10px;
+        height: 10px; 
+    }
+
+    .buttons-plus {
+    width: 10px;
+    height: 10px;
+    }
+    
+    /*  -----------------------
+            TABLE-COMPONENTS
+        ----------------------- */
+                           
+
+    /*--- containers ---*/
+
+    .table-heading,
+    .table-heading a {
+        font-size: 10px;
+    }
+    
+    /*--- table ---*/
+
+    .files-table {
+        white-space: nowrap;
+        font-size: 10px; 
+    }
+    
+    /* ICONS */
+
+    .pdf-icon {
+        width: 12px;
+        height: 16px;
+    }
+
+    .oval-profile-files {
+        width: 20px;
+        height: 20px;
+    }
+
+    .button-arrow-up {
+        width: 7px;
+        height: 7px;
+    }
+    
 }

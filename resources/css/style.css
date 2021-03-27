@@ -4,12 +4,16 @@
 */
 
 
+/*<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*/
+
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     transition: background-color 0.3s;
+    --side-bar-width: 60px;
+    --arrow-up-rotation: -180deg;
 }
 
 
@@ -30,6 +34,12 @@ body {
     color: #3d3c40;
 }
 
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
 li:hover,
 .add-btn-container:hover,
 .reports-btn-container:hover {
@@ -45,6 +55,7 @@ li:hover,
     height: 0;
     visibility: hidden;
 }
+
 
 
 /*-----------------------
@@ -65,13 +76,18 @@ li:hover,
     background-color: #ffffff;
 }
 
+.side-bar-main-page-container {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
 .main-container {
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
+    width: calc(100% - var(--side-bar-width));
+    height: 100%;
     margin: none;
     padding: 10px 25px;
     background-color: #f9faff;
-    float: left;
 }
 
 .side-bar {
@@ -80,10 +96,9 @@ li:hover,
     justify-content: space-between;
     align-items: center;
     width: 60px;
-    height: calc(100% - 60px);
+    height: 100%;
     margin: none;
     background-color: #43518e;
-    float: left;
 }
 
 
@@ -154,7 +169,6 @@ li:hover,
     height: 20px;
     margin-left: 400%;
     margin-top: 20%;
-    object-fit: contain;
 }
 
 .button-oval-plus {
@@ -162,21 +176,18 @@ li:hover,
     height: 29px;
     margin-top: 20%;
     margin-left: 400%;
-    object-fit: contain;
 }
 
 .button-search {
     width: 14px;
     height: 14px;
     margin-left: 1200%;
-    object-fit: contain;
 }
 
 .header-logo {
     width: 72px;
     height: 23px;
     margin-left: 75%;
-    object-fit: contain;
 }
 
 
@@ -218,53 +229,45 @@ li:hover,
 
 /* icons */
 
-.icon-menu {
-    width: 20px;
-    height: 13px;
-    margin-top: 20%;
-    object-fit: contain;
+ion-icon {
+    font-size: 140%;
+    display: block;
+    color: white;
 }
 
 .icon-home {
     width: 31px;
     height: 30px;
-    object-fit: contain;
 }
 
 .icons-time-and-expenses {
     width: 16px;
     height: 20px;
-    object-fit: contain;
 }
 
 .icon-clients {
     width: 26px;
     height: 16px;
-    object-fit: contain;
 }
 
 .icon-finance {
     width: 21px;
     height: 21px;
-    object-fit: contain;
 }
 
 .icon-organization-management {
     width: 24px;
     height: 22px;
-    object-fit: contain;
 }
 
 .icon-reports {
     width: 18px;
     height: 22px;
-    object-fit: contain;
 }
 
 .icon-chat {
     width: 38px;
     height: 38px;
-    object-fit: contain;
 }
   
 
@@ -317,6 +320,7 @@ li:hover,
     background-color: #3f5be2;
     transition: background-color 0.3s;
 }
+
 /* BUTTONS and COMPONENTS */
 
 .buttons-arrows-right {
@@ -339,15 +343,12 @@ li:hover,
 
 .reports-btn {
     width: 16px;
-    height: 15px;
-    object-fit: contain;
-    
+    height: 15px; 
 }
 
 .buttons-plus {
   width: auto;
   height: auto;
-  object-fit: contain;
 }
 
 
@@ -513,11 +514,10 @@ li:hover,
 }
 
 .button-arrow-up {
-    float: left;
     width: 10px;
     height: 10px;
     margin-top: 1px;
     object-fit: contain;
-    transform: rotate(-180deg);
+    transform: rotate(var(--arrow-up-rotation));
 }
 
