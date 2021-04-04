@@ -40,9 +40,11 @@ body {
     
 }
 
-li:hover,
+.tabs-nav li:hover,
 .add-btn-container:hover,
-.reports-btn-container:hover {
+.reports-btn-container:hover,
+.header-notifications div:hover,
+.header-profile div:first-child:hover {
     cursor: pointer;
 }
 
@@ -71,7 +73,7 @@ li:hover,
     align-items: center;
     width: 100%;
     height: 60px;
-    padding: 1% 1%;
+    padding: 14px 25px 14px 30px;
     box-shadow: 3px 4px 12px 0 rgba(51, 57, 100, 0.1);
     background-color: #ffffff;
 }
@@ -85,7 +87,7 @@ li:hover,
 .main-container {
     width: calc(100% - var(--side-bar-width));
     height: 100%;
-    margin: none;
+    margin: 0;
     padding: 10px 25px;
     background-color: #f9faff;
 }
@@ -97,7 +99,7 @@ li:hover,
     align-items: center;
     width: 60px;
     height: 100%;
-    margin: none;
+    margin: 0;
     background-color: #43518e;
 }
 
@@ -111,24 +113,56 @@ li:hover,
 
 /*--- containers ---*/
 
-.header-icons {
+.header-profile,
+.header-notifications,
+.header-icons{
     width: auto;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.header-icons a {
-    margin-right: 10%;
-}
-
-.header-logo-container {
-    width: auto;
+.header-logo-menu-container{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    align-items: flex-start;
+    height: auto;
+}
+
+.header-profile {
+    border-right: 1px solid #e9e9e9;
+    padding-right: 40px;
+}
+
+.header-notifications {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.header-profile div,
+.header-notifications div {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.header-profile div {
+    margin-right: 10px;
+}
+
+
+.header-notifications div {
+    margin-right: 45px;
+}
+
+
+
+.collapsable-menu {
+    display: none;
 }
 
 /*--- buttons-text-icons ---*/
@@ -136,11 +170,10 @@ li:hover,
 .button-arrow-down {
     width: 10px;
     height: 10px;
-    margin-bottom:30%;
     object-fit: contain;
 }
 
-.header-text {
+.profile-name {
     width: 44px;
     height: 17px;
     font-size: 14px;
@@ -152,44 +185,28 @@ li:hover,
 .header-oval-profile {
     width: 32px;
     height: 32px;
-    margin-top: 15%;
-    margin-left: 15px;
     border-radius: 50%;
-}
-
-.header-vertical-line {
-    width: 1px;
-    height: 26px;
-    margin-left: 4%;
-    border: solid 1px #e9e9e9;
 }
 
 .button-bell {
     width: 16px;
     height: 20px;
-    margin-left: 400%;
-    margin-top: 20%;
 }
 
 .button-oval-plus {
     width: 29px;
     height: 29px;
-    margin-top: 20%;
-    margin-left: 400%;
 }
 
 .button-search {
-    width: 14px;
-    height: 14px;
-    margin-left: 1200%;
+    width: 16px;
+    height: 16px;
 }
 
-.header-logo {
+.company-icon {
     width: 72px;
     height: 23px;
-    margin-left: 75%;
 }
-
 
 
 
@@ -223,16 +240,21 @@ li:hover,
 .side-bar-containers:active,
 .side-bar-containers:hover {
     background-color: #2c3970;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 
+
+
 /* icons */
 
-ion-icon {
-    font-size: 140%;
-    display: block;
-    color: white;
+.icon-menu {
+    fill: #9CA7D4;
+}
+
+.icon-menu:hover {
+    fill: #9CA7D4;
 }
 
 .icon-home {
@@ -418,7 +440,7 @@ ion-icon {
     justify-content: space-between;
     white-space: nowrap;
     padding-left: 2px;
-    margin-right: 0.5%;
+    margin-right: 8px;
     width: 61%;
 }
 
@@ -447,9 +469,6 @@ ion-icon {
 
 .files-table tr td:last-child {
     padding-right: 20px;
-}
-.files-table tr td:nth-child(4) {
-     padding-right: 10px;
 }
 
 .files-table tr td:first-child {
@@ -482,6 +501,7 @@ ion-icon {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
+    white-space: nowrap;
 }
 
 .files-table tr {
@@ -500,7 +520,7 @@ ion-icon {
 
 .pdf-icon {
     object-fit: contain;
-    margin-left: 20%;
+    margin-left: 6px;
     width: 15px;
     height: 19px;
 }
@@ -509,14 +529,14 @@ ion-icon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-left: 30%;
-    margin-bottom: -2%;
+    margin-left: 8px;
 }
 
 .button-arrow-up {
     width: 10px;
     height: 10px;
     margin-top: 1px;
+    margin-right: 8px;
     object-fit: contain;
     transform: rotate(var(--arrow-up-rotation));
 }

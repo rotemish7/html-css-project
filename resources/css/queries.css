@@ -1,79 +1,61 @@
 
-
-
-
-/* Big tablet to 1200px(width smaller than the 1140px row) */
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-
-/* Small tablet to big tablet 768px to 1023px */
-
-@media only screen and (max-width: 1023px) {
-    body { font-size: 18px;}
-
-}
-
-
 /* Small phones to small tablets 481px to 767px */
 
 @media only screen and (max-width: 767px) {
    
         
-    
     /* ---HEADER---- */
     
-    .header-text {
-        margin-left: 4%;
+    .header-notifications div {
+        margin-right: 30px;
     }
     
-    .button-bell {
-        margin-left: 220%;
+    .header-profile {
+        padding-right: 10px;
     }
-
-    .button-oval-plus {
-        margin-left: 220%;
+    
+    .header-notifications {
+        padding-left: 20px;
     }
-
-    .button-search {
-        margin-left: 700%;
+    
+    .collapsable-menu { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
   
+    .collapsable-menu :not(:first-child) {display: none;}
+    
+    .collapsable-menu:hover {
+        display: flex;
+        background-color: red;
     }
-
+    .menu-tab {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .menu-tab:hover {
+        cursor: pointer;
+    }
+    
     .header-logo {
-        margin-right: 100%;
+        margin-right: 20px;
+    }
 
+    
+    .icon-menu {
+        width: 26px;
+        height: 26px;
     }
     
-    .header-icons a {
-        margin: 0;
-    }
-    
-    ion-icon {
-        font-size: 140%;
-        display: block;
-        color: #43518e;
-    }
-   
     
     /* ---SIDE-BAR---- */
     
-    .side-bar {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 60px;
-        background-color: white;
-    }
-    
-    .side-bar-menu-container:first-child {
-        background-color: white;
-    }
-    
-    .side-bar :not(:first-child) {display: none;}
-    
+    .side-bar { display: none; }
     
     /* ---MAIN-PAGE---- */
     
@@ -120,6 +102,10 @@
                            
 
     /*--- containers ---*/
+    
+    .table-heading-topics {
+        width: 66%;
+    }
 
     .table-heading,
     .table-heading a {
@@ -167,34 +153,40 @@
 @media only screen and (max-width: 480px) {
     
     
+       /* ---HEADER---- */
     
-    /* ---HEADER---- */
-    
-    .header-text {
-        margin-left: 5%;
-        font-size: 11px;
+    .header-notifications div {
+        margin-right: 10px;
     }
     
+    .header-profile {
+        padding-right: 5px;
+    }
+    
+    .header-notifications {
+        padding-left: 10px;
+    }
+    
+    .profile-name {
+        font-size: 12px;
+    }
+
     .button-bell {
         width: 13px;
         height: 17px;
-        margin-left: 140%;
     }
 
     .button-oval-plus {
         width: 24px;
         height: 24px;
-        margin-left: 140%;
     }
 
     .button-search {
-        margin-left: 400%;
         width: 14px;
         height: 14px;
     }
 
     .header-logo {
-        margin-right: 70px;
         width: 70px;
         height: 20px;
     }
@@ -210,32 +202,22 @@
 
 
     .header-oval-profile {
-        width: 25px;
-        height: 25px;
+        width: 27px;
+        height: 27px;
     }
     
-    ion-icon {
-        font-size: 140%;
-        display: block;
-        color: #43518e;
-    }
-   
     
     /* ---SIDE-BAR---- */
     
     .side-bar {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 60px;
+       display: none;
     }
-    
-    .side-bar-menu-container:first-child {
-        background-color: white;
+   
+    .collapsable-menu {
+        display: flex;
     }
-    
-    .side-bar :not(:first-child) {display: none;}
-    
+    .collapsable-menu :not(:first-child) {display: none;}
+
     
     /* ---MAIN-PAGE---- */
     
@@ -282,6 +264,10 @@
                            
 
     /*--- containers ---*/
+    
+    .table-heading-topics {
+        width: 68%;
+    }
 
     .table-heading,
     .table-heading a {
