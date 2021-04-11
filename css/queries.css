@@ -3,9 +3,60 @@
 
 @media only screen and (max-width: 767px) {
    
-        
+    
+    
+  
+
     /* ---HEADER---- */
     
+    
+    /* --- Collapsable Menu ---*/
+    
+    #topMenu {
+        display: block;
+    }
+        
+    .top-menu-icon {
+        display: block;
+    }
+    
+    .overlay { 
+        height: calc(100% - var(--side-bar-width));
+        width: 0;
+        position: fixed; 
+        z-index: 1; 
+        right: 0;
+        top: 60px;
+        background-color: rgb(0,0,0); 
+        background-color: rgba(67,81,142, 0.9);
+        overflow-x: hidden; 
+        transition: 0.7s;
+    }
+  
+    .overlay a {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+          
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .overlay-content a:hover {
+        background-color: #2c3970;
+        transition: background-color 0.3s;
+    }
+    
+    /* Header Containers */
+
+    .header {
+        padding-right: 18px;
+    }
     .header-notifications div {
         margin-right: 30px;
     }
@@ -18,6 +69,7 @@
         padding-left: 20px;
     }
     
+/*
     .collapsable-menu { 
         display: flex;
         flex-flow: column nowrap;
@@ -32,6 +84,7 @@
         display: flex;
         background-color: red;
     }
+    
     .menu-tab {
         display: flex;
         justify-content: center;
@@ -41,12 +94,12 @@
     .menu-tab:hover {
         cursor: pointer;
     }
+*/
     
     .header-logo {
         margin-right: 20px;
     }
 
-    
     .icon-menu {
         width: 26px;
         height: 26px;
@@ -150,10 +203,18 @@
 
 /* Small phones 0 to 480px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     
     
        /* ---HEADER---- */
+    
+    .header {
+        padding-right: 18px;
+        padding-left: 10px;
+    }
+    .header-logo {
+        margin-top: 2px;
+    }
     
     .header-notifications div {
         margin-right: 10px;
@@ -161,6 +222,10 @@
     
     .header-profile {
         padding-right: 5px;
+    }
+    
+    .header-profile div {
+        margin-right: 4px;
     }
     
     .header-notifications {
@@ -206,6 +271,11 @@
         height: 27px;
     }
     
+    .company-icon {
+        width: 65px;
+        height: 20px;
+    }
+    
     
     /* ---SIDE-BAR---- */
     
@@ -227,7 +297,12 @@
     }
     
     .tabs-nav li {
-         font-size: 10px;
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    
+    .tabs-nav li:first-child {
+        margin-left: 0;
     }
     
     .add-btn-container,

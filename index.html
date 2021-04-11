@@ -6,71 +6,58 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type= "text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type= "text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" type= "text/css" href="css/queries.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     
 <body>
     <div class="header">
         <div class="header-icons">
             <div class="header-profile">
-                <div><img src="resources/img/buttons-arrows-down.png" alt="arrow button" class="button-arrow-down"></div>
+                <div><img src="assets/buttons-arrows-down.png" alt="arrow button" class="button-arrow-down"></div>
                 <div class="profile-name">מיכאלה</div>
-                <div><img src="resources/img/customer-2.jpg" alt="user profile" class="header-oval-profile"></div>
+                <div><img src="assets/customer-2.jpg" alt="user profile" class="header-oval-profile"></div>
             </div>
             <div class="header-notifications">
-                <div><img src="resources/img/buttons-heder-bell-copy.png" alt="bell button" class="button-bell"></div>
-                <div><img src="resources/img/buttons-c.png" alt="oval plus button" class="button-oval-plus"></div>
-                <div><img src="resources/img/search-icon.png" alt="search button" class="button-search"></div>
+                <div><img src="assets/buttons-bell.png" alt="bell button" class="button-bell"></div>
+                <div><img src="assets/buttons-add.png" alt="oval plus button" class="button-oval-plus"></div>
+                <div><img src="assets/search-icon.png" alt="search button" class="button-search"></div>
             </div>
         </div>
         <div class="header-logo-menu-container">
             <div class="header-logo">
-                <img src="resources/img/header-logo.png" alt="header logo" class="company-icon">
+                <img src="assets/header-logo.png" alt="header logo" class="company-icon">
             </div>
-            <div class="collapsable-menu">
-                <div class="menu-tab">
-                    <img src="resources/img/icons8-menu.png" class="icon-menu">
+            <div id="topMenu" class="overlay">
+                <div class="overlay-content">
+                    <a href="#"><img src="assets/icons-home.png" class="icon-home"></a>
+                    <a href="#"><img src="assets/icons-time-and-expenses.png" class="icon-time-and-expenses"></a>
+                    <a href="#"><img src="assets/icons-clients.png" class="icon-clients"></a>
+                    <a href="#"><img src="assets/icons-finance.png" class="icon-finance"></a>
+                    <a href="#"><img src="assets/icons-organization-management.png" class="icon-organization-management"></a>
+                    <a href="#"><img src="assets/icons-reports.png" class="icon-reports"></a>
+                    <a href="#"><img src="assets/buttons-chat.png" class="icon-chat"></a>
                 </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-home-regular.png" class="icon-home">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-time-and-expenses-regular.png" class="icon-time-and-expenses">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-clients-regular.png" class="icon-clients">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-finance-regular.png" class="icon-finance">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-organization-management-regular.png" class="icon-organization-management">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/icons-reports-regular.png" class="icon-reports">
-                </div>
-                <div class="menu-tab">
-                    <img src="resources/img/buttons-chat.png" class="icon-chat"> 
-                </div>     
-            </div>        
+            </div>
+            <span onclick="toggleMenu()"><img src="assets/collapsable-menu.png" class="top-menu-icon"></span>
         </div>             
     </div>
     <div class="side-bar-main-page-container">
         <div class="main-container">
             <div class="back-btn-container">
-                <a href="#"><img src="resources/img/buttons-arrows-right.png" class="buttons-arrows-right"></a>חזרה
+                <a href="#"><img src="assets/buttons-arrows-right.png" class="buttons-arrows-right"></a>חזרה
             </div>
             <div class="group-container">
                 <div class="group-name">שם הקבוצה</div>
                 <div class="main-container-buttons">
                     <div class="add-btn-container">
-                        <img src="resources/img/buttons-e.png" alt="plus button big" class="buttons-plus">
+                        <img src="assets/buttons-plus.png" alt="plus button" class="buttons-plus">
                     </div>
                     <div class="reports-btn-container">
-                        <img src="resources/img/sort-button-with-three-lines.png" alt="reports button" class="reports-btn">
+                        <img src="assets/sort-button-with-three-lines.png" alt="reports button" class="reports-btn">
                     </div>
                 </div>        
             </div>            
@@ -87,7 +74,7 @@
             </ul>
             <ul class="table-heading">
                 <div class="table-heading-topics">
-                    <li><img src="resources/img/buttons-arrows-down.png" alt="button arrow up" class="button-arrow-up">שם המסמך</li>
+                    <li><img src="assets/buttons-arrows-down.png" alt="button arrow up" class="button-arrow-up">שם המסמך</li>
                     <li>מעלה המסמך</li>
                     <li>תאריך העלאה</li>
                     <li>תיאור</li>
@@ -99,39 +86,39 @@
             <div class="table-content-container">
                 <table class="files-table">
                     <tr>
-                        <td><img src="resources/img/buttons-menu.png"></td>
+                        <td><img src="assets/buttons-menu.png"></td>
                         <td>תיאור כלשהוא</td>
                         <td>01/01/2020</td>
-                        <td>ג'ון סמית<img src="resources/img/customer-3.jpg" alt="user profile" class="oval-profile-files"></td>
-                        <td>שם המסמך<img src="resources/img/document.png" class="pdf-icon"></td>
+                        <td>ג'ון סמית<img src="assets/customer-3.jpg" alt="user profile" class="oval-profile-files"></td>
+                        <td>שם המסמך<img src="assets/document.png" class="pdf-icon"></td>
                     </tr>
                     <tr>
-                        <td><img src="resources/img/buttons-menu.png"></td>
+                        <td><img src="assets/buttons-menu.png"></td>
                         <td>תיאור כלשהוא</td>
                         <td>01/01/2020</td>
-                        <td>מיכאלה מיכאל<img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></td>
-                        <td>שם המסמך<img src="resources/img/document.png" class="pdf-icon"></td>
+                        <td>מיכאלה מיכאל<img src="assets/customer-2.jpg" alt="user profile" class="oval-profile-files"></td>
+                        <td>שם המסמך<img src="assets/document.png" class="pdf-icon"></td>
                     </tr>
                     <tr>
-                        <td><img src="resources/img/buttons-menu.png"></td>
+                        <td><img src="assets/buttons-menu.png"></td>
                         <td>תיאור כלשהוא</td>
                         <td>01/01/2020</td>
-                        <td>ג'ון סמית<img src="resources/img/customer-3.jpg" alt="user profile" class="oval-profile-files"></td>
-                        <td>שם המסמך<img src="resources/img/document.png" class="pdf-icon"></td>
+                        <td>ג'ון סמית<img src="assets/customer-3.jpg" alt="user profile" class="oval-profile-files"></td>
+                        <td>שם המסמך<img src="assets/document.png" class="pdf-icon"></td>
                     </tr>
                     <tr>
-                        <td><img src="resources/img/buttons-menu.png"></td>
+                        <td><img src="assets/buttons-menu.png"></td>
                         <td>תיאור כלשהוא</td>
                         <td>01/01/2020</td>
-                        <td>מיכאלה מיכאל<img src="resources/img/customer-2.jpg" alt="user profile" class="oval-profile-files"></td>
-                        <td>שם המסמך<img src="resources/img/document.png" class="pdf-icon"></td>
+                        <td>מיכאלה מיכאל<img src="assets/customer-2.jpg" alt="user profile" class="oval-profile-files"></td>
+                        <td>שם המסמך<img src="assets/document.png" class="pdf-icon"></td>
                     </tr>
                     <tr>
-                        <td><img src="resources/img/buttons-menu.png"></td>
+                        <td><img src="assets/buttons-menu.png"></td>
                         <td>תיאור כלשהוא</td>
                         <td>01/01/2020</td>
-                        <td>משה משה<img src="resources/img/customer-1.jpg" alt="user profile" class="oval-profile-files"></td>
-                        <td>שם המסמך<img src="resources/img/document.png" class="pdf-icon"></td>
+                        <td>משה משה<img src="assets/customer-1.jpg" alt="user profile" class="oval-profile-files"></td>
+                        <td>שם המסמך<img src="assets/document.png" class="pdf-icon"></td>
                     </tr>
                 </table>
             </div>
@@ -141,29 +128,30 @@
                 <div class="side-bar-menu-container">
                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu" height="24px" viewBox="0 0 24 24" width="24px" fill="#9CA7D4"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-home-regular.png" class="icon-home">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-home.png" class="icon-home">
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-time-and-expenses-regular.png" class="icon-time-and-expenses">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-time-and-expenses.png" class="icon-time-and-expenses">
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-clients-regular.png" class="icon-clients">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-clients.png" class="icon-clients">
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-finance-regular.png" class="icon-finance">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-finance.png" class="icon-finance">
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-organization-management-regular.png" class="icon-organization-management">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-organization-management.png" class="icon-organization-management">
                 </div>
-                <div class="side-bar-containers">
-                    <img src="resources/img/icons-reports-regular.png" class="icon-reports">
+                <div class="side-bar-icon-container">
+                    <img src="assets/icons-reports.png" class="icon-reports">
                 </div>
             </div>
             <div class="side-bar-chat-container">
-                <img src="resources/img/buttons-chat.png" class="icon-chat"> 
+                <img src="assets/buttons-chat.png" class="icon-chat"> 
             </div>     
         </div>
     </div>
+    <script src="js/menu_toggle.js"></script>
 </body>
 </html>

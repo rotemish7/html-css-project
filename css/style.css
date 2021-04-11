@@ -3,13 +3,9 @@
   -----------------------
 */
 
-
-/*<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*/
-
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     transition: background-color 0.3s;
     --side-bar-width: 60px;
@@ -41,21 +37,12 @@ body {
 }
 
 .tabs-nav li:hover,
+.top-menu-icon:hover,
 .add-btn-container:hover,
 .reports-btn-container:hover,
 .header-notifications div:hover,
 .header-profile div:first-child:hover {
     cursor: pointer;
-}
-
-
-.clearfix {zoom:1}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
 }
 
 
@@ -74,7 +61,6 @@ body {
     width: 100%;
     height: 60px;
     padding: 14px 25px 14px 30px;
-    box-shadow: 3px 4px 12px 0 rgba(51, 57, 100, 0.1);
     background-color: #ffffff;
 }
 
@@ -106,16 +92,27 @@ body {
 
 
 /*-----------------------
-   NAV-BAR COMPONENTS
+   HEADER COMPONENTS
   -----------------------
 */
 
 
 /*--- containers ---*/
 
+
+#topMenu {
+    display: none;
+}
+
+.top-menu-icon {
+    display: none;
+    width: 23px;
+    height: 23px;
+}
+
 .header-profile,
 .header-notifications,
-.header-icons{
+.header-icons {
     width: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -123,7 +120,7 @@ body {
     align-items: center;
 }
 
-.header-logo-menu-container{
+.header-logo-menu-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -218,7 +215,6 @@ body {
 
 /*--- containers ---*/
 
-
 .side-bar-main-container {
     display: flex;
     flex-flow: column nowrap;
@@ -226,7 +222,7 @@ body {
     
 }
 
-.side-bar-containers,
+.side-bar-icon-container,
 .side-bar-chat-container,
 .side-bar-menu-container {
     display: flex;
@@ -237,24 +233,21 @@ body {
     background-color: #43518e;
 }
 
-.side-bar-containers:active,
-.side-bar-containers:hover {
+.side-bar-icon-container:active,
+.side-bar-icon-container:hover {
     background-color: #2c3970;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-
-
-
-/* icons */
+/* side-bar Icons */
 
 .icon-menu {
     fill: #9CA7D4;
 }
 
 .icon-menu:hover {
-    fill: #9CA7D4;
+    fill: white;
 }
 
 .icon-home {
@@ -343,7 +336,7 @@ body {
     transition: background-color 0.3s;
 }
 
-/* BUTTONS and COMPONENTS */
+/* Buttons and Components */
 
 .buttons-arrows-right {
     width: 13px;
@@ -393,8 +386,7 @@ body {
     white-space: nowrap;
     border-bottom: solid 4px transparent;
     padding-bottom: 3px;
-    font-size: 14px;
-    
+    font-size: 14px;   
 }
 
 .tabs-nav li:hover {
@@ -403,13 +395,13 @@ body {
     transition: border-bottom 0.2s;
 } 
 
+
 /*-----------------------
    TABLE-COMPONENTS
   -----------------------
 */
 
-
-/*--- containers ---*/
+/* --- Heading --- */
 
 .table-heading {
     display: flex;
@@ -448,6 +440,8 @@ body {
     width: 10%;
 }
 
+/* --- Content --- */
+
 .table-content-container {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -457,7 +451,7 @@ body {
 }
 
 
-/*--- table ---*/
+/*--- Table Rows and Cells ---*/
 
 .files-table {
     border-collapse: collapse;
@@ -516,7 +510,7 @@ body {
     height: 55px;
 }
 
-/* ICONS */
+/* Table-Icons */
 
 .pdf-icon {
     object-fit: contain;
