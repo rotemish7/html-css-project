@@ -1,0 +1,126 @@
+
+/*-----------------------
+        BASIC SETUP
+  -----------------------
+*/
+
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    color: #555555;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    color: #3d3c40;
+}
+
+.header {
+    padding: 10px 10px;
+    color: white;
+    background-color: #217fa1;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#temperature {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 22px;
+}
+
+/*-----------------------
+      Welcome Page 
+  -----------------------
+*/
+
+.weather-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.opening-page {
+    margin-top: 100px;
+    width: auto;
+}
+
+.opening-page h1 {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 10px;
+    width: auto;
+    text-align: center;
+}
+
+#search-container {
+    position: relative;
+}
+
+form.search {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the search field */
+form.search input[type=text] {
+    margin-left: -35px;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    opacity: 0.4;
+    width: 200px;
+    outline: none;
+    background:#55d1fe;
+  }
+  
+  /* Style the submit button */
+  form.search i {
+    width: auto;
+    background: #2596be;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .search-arrow {
+      color:rgb(37, 26, 101);
+  }
+
+ .search-arrow:hover,
+ .search-arrow:active {
+    color: rgba(0, 0, 0,1);
+  }
+
+  form.search button {
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+      margin-top: 4px;
+      background-color: transparent;
+      border: transparent;
+  }
+
+

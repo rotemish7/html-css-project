@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" type= "text/css" href="css/queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="weather-logo"><img src="assests/high-temperature.png"></div>
+        <input onclick="change()" type="button" value="°C" id="temperature"></input>
+        <div id="fernaite-temp">°F</div>
+        <div></div>
+    </div>
+
+    <div class="opening-page">
+        <h1 id="h1">Welcome to<br>Weather App</h1>
+        <!-- The form -->
+        <div id="search-container">
+            <form id="form-id" class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search Place" name="search">  
+                <button id="arrow-btn" type="button"><svg class="search-arrow" width="11" height="14" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-7-5h24v24H-7z"/><path d="M0 1.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 000-1.69L1.54.98A.998.998 0 000 1.82z" fill="currentColor"/></g></svg></button>
+            </form>
+        </div>
+    </div>
+</body>
+ 
+
+<script src="js/script.js"></script>
+</html>
